@@ -22,7 +22,7 @@ BUT the apps **take time to load** as they need to download a Python runtime and
 
 This is **THE FUTURE OF DATAVIZ** in Python.
 
-If you like Panel and Awesome Panel please support the projects by giving them a ⭐ on Github
+If you like [Panel](https://panel.holoviz.org/) and [Awesome Panel](https://awesome-panel.org) please support the projects by giving them a ⭐ on Github
 
 [⭐ holoviz/panel](https://github.com/holoviz/panel) [⭐ awesome-panel/awesome-panel](https://github.com/awesome-panel/awesome-panel) [⭐ awesome-panel/examples](https://github.com/awesome-panel/examples)
 
@@ -89,6 +89,6 @@ The Github Pages of `awesome-panel/examples` is configured as described below
 
 ## 🔥 Release to Github Pages
 
-Git `add`, `commit` and `push` as you would normally do.
+Git `add`, `commit`, `push` and *merge* your PR as you would normally do.
 
 The applications are now available at [awesome-panel.github.io/examples/](awesome-panel.github.io/examples/) or similar.

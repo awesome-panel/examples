@@ -1,20 +1,24 @@
 # ✨ Awesome Panel Examples
 
-A repository of Awesome Panel data app examples.
+A repository of awesome Panel data app examples.
 
 The source files are available in the [src](/src) folder.
 
 The apps are converted to webassembly and released to
-[awesome-panel.github.io/examples](awesome-panel.github.io/examples) as simple as
+[awesome-panel.github.io/examples](https://awesome-panel.github.io/examples) as simple as
 
 1. `$ panel convert app.py` (1 second)
 2. `$ git push` (1 second)
 
 This is **THE FASTEST WAY TO DEPLOY DATA APPS** in Python.
 
-The apps are very performant when loaded because there is no latency for communication between
-server and client. BUT the apps take time to load as they need to download
-a Python runtime and additional packages (50MB per app).
+The apps are **very performant** when loaded because there is no latency for communication between
+server and client.
+
+![awesome-panel-examples-tour.gif](assets/gifs/awesome-panel-examples-tour.gif)
+
+BUT the apps **take time to load** as they need to download a Python runtime and additional packages
+(50MB per app).
 
 This is **THE FUTURE OF DATAVIZ** in Python.
 
@@ -74,9 +78,9 @@ The app is now available at [http://localhost:8000/docs/hello-world/app.html](ht
 
 You can learn how to configure Github Pages in general via the [Quickstart for Github Pages](https://docs.github.com/en/pages/quickstart).
 
-The Github Pages of [awesome-panel/examples] is configured as described below
+The Github Pages of `awesome-panel/examples` is configured as described below
 
-1. Make sure the repository contains a `.nojekyll` file and is pushed and up to date.
+1. Add a `.nojekyll` file push all changes.
 2. Navigate to the *Settings* page
 3. Navigate to the *Pages* page
 4. Configure your Pages Settings as shown below
@@ -87,4 +91,4 @@ The Github Pages of [awesome-panel/examples] is configured as described below
 
 Git `add`, `commit` and `push` as you would normally do.
 
-After a little bit of time the applications should be available at [awesome-panel.github.io/examples](awesome-panel.github.io/examples) or similar.
+The applications are now available at [awesome-panel.github.io/examples](awesome-panel.github.io/examples) or similar.

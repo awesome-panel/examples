@@ -1,0 +1,6 @@
+panel~=0.14
+invoke
+isort
+black
+pylint
+mypy

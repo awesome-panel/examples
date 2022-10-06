@@ -69,6 +69,7 @@ template = pn.template.FastGridTemplate(
     header_background=ACCENT,
     prevent_collision=True,
     save_layout=True,
+    favicon="https://raw.githubusercontent.com/MarcSkovMadsen/awesome-panel-assets/320297ccb92773da099f6b97d267cc0433b67c23/favicon/ap-1f77b4.ico",
 )
 rstep = 1
 cstep = 2

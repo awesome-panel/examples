@@ -94,8 +94,20 @@ The Github Pages of `awesome-panel/examples` is configured as described below
 
 ![Github Pages Settings](assets/images/gh-pages-settings.png)
 
-## 🔥 Release to Github Pages
+### 🔥 Release to Github Pages
 
 Git `add`, `commit`, `push` and *merge* your PR as you would normally do.
 
 The applications are now available at [awesome-panel.github.io/examples/](awesome-panel.github.io/examples/) or similar.
+
+## Development
+
+The below instructions are preliminary and for the project contributors
+
+### Build the project
+
+```bash
+panel convert src/hello-world/app.py --to pyodide-worker --out docs/hello-world
+panel convert src/streaming-indicators/app.py --to pyodide-worker --out docs/streaming-indicators
+python src/index/index.py
+```

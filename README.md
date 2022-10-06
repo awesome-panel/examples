@@ -1,6 +1,6 @@
 # ✨ Awesome Panel Examples
 
-A repository of awesome Panel data app examples.
+A repository of awesome [Panel](https://panel.holoviz.org/) data app examples.
 
 The source files are available in the [src](/src) folder.
 

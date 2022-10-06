@@ -1,4 +1,4 @@
-# Awesome Panel Examples
+# ✨ Awesome Panel Examples
 
 A repository of Awesome Panel data app examples.
 
@@ -26,7 +26,7 @@ Thanks 👍
 
 ## 📙 How to
 
-### Install the repository
+### ⚙️ Install the repository
 
 ```bash
 git clone https://github.com/awesome-panel/examples.git
@@ -41,7 +41,7 @@ Install the `requirements.txt` file
 pip install -r requirements.txt -U
 ```
 
-### Serve a server app locally
+### 💻 Serve a server app locally
 
 You can serve for example the [hello-world](src/hello-world/app.py) application on your Panel server via
 
@@ -53,7 +53,7 @@ It will be available at [http://localhost:5006/app](http://localhost:5006/app).
 
 ![Panel Hello World App](assets/images/hello-world.png)
 
-### Convert an app to webassembly
+### 🏗️ Convert an app to webassembly
 
 You can [panel convert](https://panel.holoviz.org/user_guide/Running_in_Webassembly.html) for
 example the [hello-world](src/hello-world/app.py) application to webassembly via
@@ -62,7 +62,7 @@ example the [hello-world](src/hello-world/app.py) application to webassembly via
 panel convert src/hello-world/app.py --to pyodide-worker --out docs/hello-world
 ```
 
-### Serve a webassembly app locally
+### 💻 Serve a webassembly app locally
 
 ```bash
 python3 -m http.server
@@ -83,6 +83,8 @@ The Github Pages of [awesome-panel/examples] is configured as described below
 
 ![Github Pages Settings](assets/images/gh-pages-settings.png)
 
-## 🏎️ Release to Github Pages
+## 🔥 Release to Github Pages
 
 Git `add`, `commit` and `push` as you would normally do.
+
+After a little bit of time the applications should be available at [awesome-panel.github.io/examples](awesome-panel.github.io/examples) or similar.

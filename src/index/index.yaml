@@ -1,0 +1,74 @@
+---
+users:
+  - uid: andrew_huang
+    name: Andrew Huang
+    category: Other
+    email: 
+    avatar: "https://avatars3.githubusercontent.com/u/15331990?s=400&u=6f855e2f82d576fd22110f2ac9b1b7ec4825d916&v=4"
+    url: "https://twitter.com/iateandrew1"
+    resources: 
+    tags: 
+  - uid: jochem_smit
+    name: Jochem Smit
+    category: Other
+    email: 
+    avatar: "https://avatars1.githubusercontent.com/u/7881506?s=400&u=bdf7b6635bf57e7022763ce3b002649fe80ef6a8&v=40"
+    url: "https://github.com/Jhsmit"
+    resources: 
+    tags: 
+  - uid: marc_skov_madsen
+    name: Marc Skov Madsen
+    category: Other
+    email: 
+    avatar: "https://avatars0.githubusercontent.com/u/42288570"
+    url: "https://datamodelsanalytics.com"
+    resources: 
+    tags: 
+  - uid: stephen_kilcommins
+    name: Stephen Kilcommins
+    category: Other
+    email: 
+    avatar: "https://miro.medium.com/fit/c/96/96/1*DOAQGAKm-Lzek_1TztoR9Q.jpeg"
+    url: "https://www.linkedin.com/in/stephen-kilcommins/"
+    resources: 
+    tags: 
+applications:
+  - url: hello-world/app.html
+    name: About
+    author: marc_skov_madsen
+    owner: 
+    category: Main
+    description: A Panel hello world application
+    description_long: |-
+      ## A Panel hello world application
+    project: 
+    resources:       
+      code: https://github.com/awesome-panel/examples/tree/master/src/hello-world/app.py
+    servable: 
+    tags:       
+      - Basic
+    thumbnail: "https://github.com/awesome-panel/examples/blob/main/src/hello-world/thumbnail.png?raw=true"
+  - url: streaming-indicators/app.html
+    name: Streaming Indicators
+    author: marc_skov_madsen
+    owner: 
+    category: Dashboards
+    description: A Streaming Indicators Dashboard
+    description_long: |-
+      This example shows a streaming indicators dashboard.
+      
+      Panel runs on top of the Tornado server. Tornado is a fast, asynchronous web server built to
+      support streaming use cases.
+      
+      In panel it's very easy to support periodic updates. Here it's done via
+      `pn.state.add_periodic_callback`.
+    project: 
+    resources:       
+      code: https://github.com/awesome-panel/examples/tree/master/src/streaming-indicators/app.py
+      mp4: https://github.com/MarcSkovMadsen/awesome-panel-assets/blob/master/awesome-panel/applications/streaming-dashboard.mp4
+    servable: 
+    tags:       
+      - Streaming
+      - Dashboard
+      - StatsCard
+    thumbnail: "https://github.com/awesome-panel/examples/blob/main/src/streaming-indicators/thumbnail.png?raw=true"

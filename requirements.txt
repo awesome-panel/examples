@@ -1,4 +1,5 @@
 panel~=0.14
+awesome-panel-extensions
 invoke
 isort
 black

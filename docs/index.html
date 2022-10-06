@@ -1,2 +1,400 @@
-<a href="hello-world/app.html">Hello World</a>
-<a href="streaming-indicators/app.html">Streaming Indicators</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Awesome Panel | Examples</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/MarcSkovMadsen/awesome-panel-assets/320297ccb92773da099f6b97d267cc0433b67c23/favicon/ap-1f77b4.ico" type="">
+    <meta name="name" content="Awesome Panel Examples">
+    <meta name="description" content="Example applications provided by awesome-panel.org">
+    <meta name="keywords" content="Awesome, HoloViz, Panel, Gallery, Apps, Science, Data Engineering, Data Science, Machine Learning, Python">
+    <meta name="author" content="Marc Skov Madsen">
+    
+    
+    
+    <style>*:not(:defined){visibility:hidden}</style>
+    <style>
+        html {
+    height:100%;
+}
+body, #body-design-provider {
+    min-height: 100vh;
+}
+body {
+    margin: 0px;
+    padding: 0;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    line-height: normal;
+    font-family: aktiv-grotesk, "Segoe UI", Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+}
+#body-design-provider{
+    padding-bottom: 10px;
+}
+
+.header {
+  /* Photo by mnm.all on Unsplash */
+  background-image: url('https://preview.redd.it/9oi428ohy7t21.png?auto=webp&s=5051b77d33e85446b6492a1e02725c6729777d4f') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-grid {
+  /* Grid styles */
+  padding: 4rem 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+.header article {
+    margin-right: 1.0em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+    opacity: 0.8;
+}
+
+#title, #divider, #subtitle {
+    background: transparent;
+    font-size: 1.5em;
+    color: white;
+}
+
+#search-input {
+    margin-top: 1em;
+    margin-left:2em;
+    margin-bottom:0em;
+    width: calc(100% - 4em);
+}
+.theme-toggle-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+}
+
+/* The grid layout is inspired by
+https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+https://codepen.io/andybelldesign/pen/vMMYKJ */
+/*
+  AUTO GRID
+  Set the minimum item size with `--cards-grid-min-size` and you'll
+  get a fully responsive grid with no media queries.
+*/
+.cards-grid {
+  --cards-grid-min-size: 16rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cards-grid-min-size), 1fr));
+  grid-gap: 2rem;
+  list-style: none;
+}
+/* Presentational styles */
+.card {
+  padding: 0px;
+}
+
+.cards-grid {
+    margin: 2rem;
+    padding: 0px;
+}
+
+.avatar {
+    vertical-align: middle;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.card-actions {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.card-action svg {
+    vertical-align: middle;
+    float: left;
+    height: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    fill: var(--neutral-foreground-rest);
+}
+.card-action.github-action svg {
+    color: var(--neutral-foreground-rest);
+}
+.card-image {
+    height: 200px;
+    width: 100%;
+}
+.card-content {
+    padding: 10px 10px 10px;
+    color: var(--neutral-foreground-rest);
+}
+
+*|*:link {
+    text-decoration: none;
+}
+
+.card-text {
+    height: 100px;
+}
+.card-header {
+    height: 2em;
+}
+.theme-default .gallery-item:hover {
+    box-shadow: 0 3px 10px var(--neutral-focus);
+}
+.theme-dark .gallery-item:hover {
+    background: var(--neutral-fill-hover);
+}
+footer {
+    padding: .50rem;
+    text-align: center;
+    font-size: .75rem;
+}
+
+::-webkit-scrollbar { width: 12px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: var( --neutral-fill-rest); }
+::-webkit-scrollbar-track {  background-color: var( --neutral-fill-rest);}
+::-webkit-scrollbar-track-piece { background-color: var(--background-color)}
+::-webkit-scrollbar-thumb { height: 50px; background-color: var( --neutral-fill-rest); border-radius: var(--corner-radius);}
+::-webkit-scrollbar-corner { background-color: var();}
+::-webkit-resizer { background-color: var( --neutral-fill-rest);}
+        :root { --body-font: Open Sans; }
+        body { font-family: var(--body-font); }
+        
+        .header {
+            /* Photo by mnm.all on Unsplash */
+            background-image: url('https://preview.redd.it/9oi428ohy7t21.png?auto=webp&s=5051b77d33e85446b6492a1e02725c6729777d4f');
+        }
+        
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    
+    <link href="https://use.typekit.net/spx2dgm.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@microsoft/fast-colors@5.1.0"></script>
+    <script type="module" src="https://unpkg.com/@microsoft/fast-components@1.13.0"></script>
+    <script type="text/javascript">function setParamsFromSearch(text){
+    const params = new URLSearchParams(location.search);
+    if (text===""){
+        params.delete("search")
+    } else {
+        params.set('search', text);
+    }
+    window.history.replaceState({}, '', `${location.pathname}?${params}`);
+}
+function hideCards(text) {
+  text=text.toLowerCase();
+  const cards = document.getElementsByTagName("li")
+  for (const card of cards){
+      if (text==="" || card.innerHTML.toLowerCase().includes(text)){
+          card.style.display=""
+      } else {card.style.display="none"}
+  }
+
+  setParamsFromSearch(text)
+}
+function toggleLightDarkTheme(){
+    el=document.getElementById("body-design-provider")
+    const switchEl = document.getElementById("theme-switch")
+    const params = new URLSearchParams(location.search);
+
+    if (switchEl.checked){
+        el.setAttribute("background-color", "#ffffff")
+        el.className="theme-default"
+        params.set('theme', "default");
+    } else {
+        el.setAttribute("background-color", "#000000")
+        el.className="theme-dark"
+        params.set('theme', "dark");
+    }
+    window.history.replaceState({}, '', `${location.pathname}?${params}`);
+}
+function setSwitchFromParams(){
+    const params = new URLSearchParams(window.location.search)
+    if (params.has('theme')){
+        const theme = params.get('theme')
+        const switchEl = document.getElementById("theme-switch")
+        if (theme==='dark'){
+            switchEl.checked=false
+        } else {
+            switchEl.checked=true
+        }
+        toggleLightDarkTheme()
+    }
+}
+function setSearchFromParams(){
+    const params = new URLSearchParams(window.location.search)
+    if (params.has('search')){
+        const search = params.get('search')
+        const searchEl = document.getElementById("search-input")
+        searchEl.value = search
+        hideCards(search)
+    }
+}
+
+</script>
+    <script type="module">
+        import { parseColorHexRGB } from "https://unpkg.com/@microsoft/fast-colors@5.1.0";
+        import { createColorPalette } from "https://unpkg.com/@microsoft/fast-components@1.13.0";
+
+        function standardize_color(str){
+            var ctx = document.createElement('canvas').getContext('2d');
+            ctx.fillStyle = str;
+            return ctx.fillStyle;
+          }
+
+        function setAccentColor(color, selector){
+            color = standardize_color(color);
+            const accent = color;
+            const palette = createColorPalette(parseColorHexRGB(accent));
+            const provider = document.querySelector(selector);
+            provider.accentBaseColor = accent;
+            provider.accentPalette = palette;
+        }
+        setAccentColor("#1f77b4", "#body-design-provider");
+        setAccentColor("#ffffff", "#header-design-provider");
+
+        function setNeutralColor(color, selector){
+            const palette = createColorPalette(parseColorHexRGB(color));
+            const provider = document.querySelector(selector);
+
+            provider.neutralPalette = palette;
+        }
+        setNeutralColor("#ffffff", "#header-design-provider");
+        setNeutralColor("#000000", "#body-design-provider");
+        </script>
+</head>
+<body>
+    <fast-design-system-provider id="body-design-provider" use-defaults background-color="#ffffff" class="theme-default"
+        >
+        
+        
+            <fast-design-system-provider id="header-design-provider" use-defaults background-color="#000000">
+            <section class="header">
+            
+            <fast-switch id="theme-switch" style="float: right; padding-top: 1em; padding-right: 2em;" onChange="toggleLightDarkTheme()" checked>
+                <span slot="checked-message">
+                    <svg class="theme-toggle-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/></svg>
+                  </span>
+                  <span slot="unchecked-message">
+                    <svg class="theme-toggle-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/></svg>
+                  </span>
+            </fast-switch>
+            
+            <fast-tooltip anchor="theme-switch">Click to toggle the Theme</fast-tooltip>
+            <div class="header-grid">
+            <h1>
+                <fast-anchor id="title" href="/" appearance="neutral" target="_self">Awesome Panel </fast-anchor>
+                <fast-anchor id="divider" appearance="neutral">/</fast-anchor>
+                <fast-anchor id="subtitle" href="" appearance="neutral" target="_self">Examples</fast-anchor>
+            </h1>
+            <article>
+                <p>The purpose of the Awesome Panel Examples is to inspire
+and help you create awesome analytics apps in
+<fast-anchor href="https://panel.holoviz.org" target="_blank"
+ appearance="hypertext">Panel</fast-anchor> using the tools you know and
+ love.</p>
+            </article>
+            </div>
+            </section>
+            </fast-design-system-provider>
+            <section class="search">
+                <fast-text-field id="search-input" placeholder="search" onInput="hideCards(event.target.value)"></fast-text-field>
+            </section>
+            <section id="cards">
+            <ul class="cards-grid">
+            
+            <li class="card">
+                <fast-card class="gallery-item">
+                    <a title="Click to open" class="card-action" href="hello-world/app.html" target="_self">
+                    <img class="card-image" src="https://github.com/awesome-panel/examples/blob/main/src/hello-world/thumbnail.png?raw=true"/>
+                    <div class="card-content">
+                        <h2 class="card-header">About</h2>
+                        <p class="card-text">A Panel hello world application</p>
+                    </div></a>
+                    <div class="card-actions">
+                        
+                        
+                        <a class="card-action author-action" href="https://datamodelsanalytics.com" target="_self">
+                            <img src="https://avatars0.githubusercontent.com/u/42288570" alt="avatar" class="avatar" title="Author: Marc Skov Madsen">
+                        </a>
+                        
+                        
+                        
+                        
+                        <a title="View the Code" appearance="neutral" class="card-action code-action" href="https://github.com/awesome-panel/examples/tree/master/src/hello-world/app.py" target="_self">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
+                            </svg>
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </fast-card>
+            </li>
+            
+            <li class="card">
+                <fast-card class="gallery-item">
+                    <a title="Click to open" class="card-action" href="streaming-indicators/app.html" target="_self">
+                    <img class="card-image" src="https://github.com/awesome-panel/examples/blob/main/src/streaming-indicators/thumbnail.png?raw=true"/>
+                    <div class="card-content">
+                        <h2 class="card-header">Streaming Indicators</h2>
+                        <p class="card-text">A Streaming Indicators Dashboard</p>
+                    </div></a>
+                    <div class="card-actions">
+                        
+                        
+                        <a class="card-action author-action" href="https://datamodelsanalytics.com" target="_self">
+                            <img src="https://avatars0.githubusercontent.com/u/42288570" alt="avatar" class="avatar" title="Author: Marc Skov Madsen">
+                        </a>
+                        
+                        
+                        
+                        
+                        <a title="View the Code" appearance="neutral" class="card-action code-action" href="https://github.com/awesome-panel/examples/tree/master/src/streaming-indicators/app.py" target="_self">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
+                            </svg>
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a title="View the .mp4 video" appearance="hypertext" class="card-action mp4-action" href="https://github.com/MarcSkovMadsen/awesome-panel-assets/blob/master/awesome-panel/applications/streaming-dashboard.mp4" target="_self">
+                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0h8v6H4V1zm8 8H4v6h8V9zM1 1h2v2H1V1zm2 3H1v2h2V4zM1 7h2v2H1V7zm2 3H1v2h2v-2zm-2 3h2v2H1v-2zM15 1h-2v2h2V1zm-2 3h2v2h-2V4zm2 3h-2v2h2V7zm-2 3h2v2h-2v-2zm2 3h-2v2h2v-2z"/>
+                            </svg>
+                        </a>
+                        
+                        
+                    </div>
+                </fast-card>
+            </li>
+            
+            </ul>
+            </section>
+            
+        
+        
+        
+    <script type="text/javascript">
+        setSwitchFromParams()
+        setSearchFromParams()
+    </script>
+    </fast-design-system-provider>
+</body>
+</html>

@@ -5,7 +5,7 @@ A repository of Awesome Panel data app examples.
 The source files are available in the [src](/src) folder.
 
 The apps are converted to webassembly and released to
-[awesome-panel.github.io/examples](awesome-panel.github.io/examples) as simple as
+[awesome-panel.github.io/examples](https://awesome-panel.github.io/examples) as simple as
 
 1. `$ panel convert app.py` (1 second)
 2. `$ git push` (1 second)

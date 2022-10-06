@@ -66,6 +66,13 @@ example the [hello-world](src/hello-world/app.py) application to webassembly via
 panel convert src/hello-world/app.py --to pyodide-worker --out docs/hello-world
 ```
 
+If you want to avoid repeating the big download over and over again, you can even convert to a
+[progressive web app](https://en.wikipedia.org/wiki/Progressive_web_app) that can be installed on
+your laptop! It is as simple as adding the `--pwa` and `--title` flags.
+
+Check out the [Panel WebAssembly Guide](https://panel.holoviz.org/user_guide/Running_in_Webassembly.html)
+for more details.
+
 ### 💻 Serve a webassembly app locally
 
 ```bash

@@ -109,5 +109,12 @@ The below instructions are preliminary and for the project contributors
 ```bash
 panel convert src/hello-world/app.py --to pyodide-worker --out docs/hello-world
 panel convert src/streaming-indicators/app.py --to pyodide-worker --out docs/streaming-indicators
+panel convert src/stumpy-dashboard/app.py --to pyodide-worker --out docs/stumpy-dashboard
 python src/index/index.py
 ```
+
+```bash
+python3 -m http.server
+```
+
+[http://localhost:8000/docs/index.html](http://localhost:8000/docs/index.html)

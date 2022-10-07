@@ -32,6 +32,14 @@ users:
     url: "https://www.linkedin.com/in/stephen-kilcommins/"
     resources: 
     tags: 
+  - uid: sean_law
+    name: Sean Law
+    category: Other
+    email: 
+    avatar: "https://avatars.githubusercontent.com/u/7473521?v=4"
+    url: "https://github.com/seanlaw"
+    resources: 
+    tags: 
 applications:
   - url: hello-world/app.html
     name: About
@@ -48,6 +56,24 @@ applications:
     tags:       
       - Basic
     thumbnail: "https://github.com/awesome-panel/examples/blob/main/src/hello-world/thumbnail.png?raw=true"
+  - url: stumpy-dashboard/app.html
+    name: Stumpy Dashboard
+    author: sean_law
+    owner: 
+    category: Dashboards
+    description: A Stumpy Timeseries Analysis Dashboard. A Bokeh Dashboard converted to webassembly.
+    description_long: |-
+      This examples demonstrates how your with a few changes to your existing Bokeh dashboard can
+      convert it to webassembly.
+    project: 
+    resources:       
+      code: https://github.com/awesome-panel/examples/tree/master/src/stumpy-dashboard/app.py
+      docs: 
+    servable: 
+    tags:       
+      - Timeseries
+      - Dashboard
+    thumbnail: "https://github.com/awesome-panel/examples/blob/main/src/stumpy-dashboard/thumbnail.png?raw=true"
   - url: streaming-indicators/app.html
     name: Streaming Indicators
     author: marc_skov_madsen

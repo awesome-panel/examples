@@ -43,7 +43,7 @@ import panel as pn
 ACCENT = "#1f77b4"
 OK_COLOR = "#2ca02c"
 ERROR_COLOR = "#d62728"
-PERIOD = 25
+PERIOD = 500
 
 
 def _increment(value):
@@ -86,7 +86,7 @@ for row in range(0, 3, rstep):
         )
         template.main[row, col : col + cstep] = indicator
 
-        pn.state.add_periodic_callback(_create_callback(indicator), period=100)
+        pn.state.add_periodic_callback(_create_callback(indicator), period=PERIOD)
 
 rstep = 2
 cstep = 2
@@ -104,7 +104,7 @@ for row in range(3, 6, rstep):
         )
         template.main[row : row + rstep, col : col + cstep] = indicator
 
-        pn.state.add_periodic_callback(_create_callback(indicator), period=100)
+        pn.state.add_periodic_callback(_create_callback(indicator), period=PERIOD)
 
 template.servable()
 

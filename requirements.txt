@@ -1,7 +1,8 @@
-panel~=0.14
 awesome-panel-extensions
+black
 invoke
 isort
-black
-pylint
 mypy
+pandas
+panel~=0.14
+pylint

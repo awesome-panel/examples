@@ -14,6 +14,7 @@ FAVICON = "https://raw.githubusercontent.com/MarcSkovMadsen/awesome-panel-assets
 
 index_html = GalleryTemplate(
         site="Awesome Panel",
+        site_url="https://awesome-panel.org",
         title="Webassembly Apps",
         description="""The purpose of the Awesome Panel Webassembly Apps is to inspire
 and help you create awesome analytics apps in

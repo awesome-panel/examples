@@ -14,8 +14,8 @@ FAVICON = "https://raw.githubusercontent.com/MarcSkovMadsen/awesome-panel-assets
 
 index_html = GalleryTemplate(
         site="Awesome Panel",
-        title="Examples",
-        description="""The purpose of the Awesome Panel Examples is to inspire
+        title="Webassembly Apps",
+        description="""The purpose of the Awesome Panel Webassembly Apps is to inspire
 and help you create awesome analytics apps in
 <fast-anchor href="https://panel.holoviz.org" target="_blank"
  appearance="hypertext">Panel</fast-anchor> using the tools you know and
@@ -24,7 +24,7 @@ and help you create awesome analytics apps in
         target="_self",
         theme="default",
         meta_name="Awesome Panel Examples",
-        meta_description="Example applications provided by awesome-panel.org",
+        meta_description="Example webassembly applications provided by awesome-panel.org",
         meta_keywords=(
             "Awesome, HoloViz, Panel, Gallery, Apps, Science, Data Engineering, Data Science, "
             "Machine Learning, Python"

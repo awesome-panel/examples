@@ -98,3 +98,23 @@ applications:
       - Dashboard
       - StatsCard
     thumbnail: "https://github.com/awesome-panel/examples/blob/main/src/streaming-indicators/thumbnail.png?raw=true"
+  - url: videostream-interface/app.html
+    name: VideoStream Interface
+    author: marc_skov_madsen
+    owner: 
+    category: Dashboards
+    description: An interface for working with VideoStreams
+    description_long: |-
+      This example shows a transformed VideoStream
+      
+      Panel runs on top of the Tornado server. Tornado is a fast, asynchronous web server built to
+      support streaming use cases.
+    project: 
+    resources:       
+      code: https://github.com/awesome-panel/examples/tree/master/src/videostream-interface/app.py
+    servable: 
+    tags:       
+      - Streaming
+      - Dashboard
+      - Video
+    thumbnail: "https://github.com/awesome-panel/examples/blob/main/src/videostream-interface/thumbnail.png?raw=true"

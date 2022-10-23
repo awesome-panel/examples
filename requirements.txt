@@ -6,3 +6,4 @@ mypy
 pandas
 panel~=0.14
 pylint
+-r src/videostream-interface/requirements.txt

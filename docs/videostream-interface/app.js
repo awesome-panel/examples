@@ -15,7 +15,7 @@ async function startApplication() {
   self.pyodide.globals.set("sendPatch", sendPatch);
   console.log("Loaded!");
   await self.pyodide.loadPackage("micropip");
-  const env_spec = ['https://cdn.holoviz.org/panel/0.14.0/dist/wheels/bokeh-2.4.3-py3-none-any.whl', 'https://cdn.holoviz.org/panel/0.14.0/dist/wheels/panel-0.14.0-py3-none-any.whl', 'numpy', 'scikit-image']
+  const env_spec = ['https://cdn.holoviz.org/panel/0.14.0/dist/wheels/bokeh-2.4.3-py3-none-any.whl', 'https://cdn.holoviz.org/panel/0.14.0/dist/wheels/panel-0.14.0-py3-none-any.whl', 'src/']
   for (const pkg of env_spec) {
     const pkg_name = pkg.split('/').slice(-1)[0].split('-')[0]
     self.postMessage({type: 'status', msg: `Installing ${pkg_name}`})
@@ -440,9 +440,11 @@ component = VideoStreamInterface(
 
 pn.template.FastListTemplate(
     site="Awesome Panel",
+    site_url="https://awesome-panel.org",
     title="VideoStream with transforms",
     sidebar=[component.settings],
     main=[component],
+    favicon="https://raw.githubusercontent.com/MarcSkovMadsen/awesome-panel-assets/320297ccb92773da099f6b97d267cc0433b67c23/favicon/ap-1f77b4.ico",
 ).servable()
 
 # panel convert script2.py --to pyodide-worker --out pyodide --requirements requirements.txt
